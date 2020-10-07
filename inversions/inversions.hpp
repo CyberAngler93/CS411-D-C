@@ -68,7 +68,7 @@ std::size_t mergeSort(FDIter first, FDIter last)
 
 template<typename RAIter>
 std::size_t inversions(RAIter first, RAIter last){
-    return (std::distance(first, last) < 1) ? 0 : mergeSort(first,last);
+    return mergeSort(first,last);
 }
 
 #endif //INVERSIONS_HPP
