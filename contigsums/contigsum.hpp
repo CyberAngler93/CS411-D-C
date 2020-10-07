@@ -1,6 +1,8 @@
 //
 // Created by Matt Perry on 10/6/2020.
-//
+// This is my solution for exersise A on CS411-HW3 
+// CS411 Prof. Hartman
+// Last Modified on 10/07/20
 
 #ifndef CONTIGSUM_HPP
 #define CONTIGSUM_HPP
