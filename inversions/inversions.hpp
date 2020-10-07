@@ -2,7 +2,9 @@
 // Created by Matt Perry on 10/7/2020.
 // stableMerge and mergeSort taken from Dr. Chappell's Stable Merge Sort example,
 // added functionality of counting inversions. cleaned up using statements to better align with hpp files.
-//
+// This is my solution for exersise B on CS411-HW3 
+// CS411 Prof. Hartman
+// Last Modified on 10/07/20
 
 #ifndef INVERSIONS_HPP
 #define INVERSIONS_HPP
