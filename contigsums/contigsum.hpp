@@ -14,12 +14,14 @@ struct GCS_Values
 };
 
 template<typename RAIter>
-GCS_Values contig_worker(RAIter first, RAIter last, std::size_t size){
-    if(size < 2) return GCS_Values{*first, *first, *first , *first};
+GCS_Values contig_worker(RAIter first, RAIter last){
+    std::size_t size = std::distance(first, last);
+    if(size == 1) return GCS_Values{std::max(*first, 0), std::max(*first, 0), std::max(*first, 0), *first};
+    else if (size == 0) return GCS_Values{0,0,0,0};
     else {
         auto mid = std::next(first, size/2u);
-        auto left = contig_worker(first, mid, std::distance(first, mid));
-        auto right = contig_worker(mid, last, std::distance(mid, last));
+        auto left = contig_worker(first, mid);
+        auto right = contig_worker(mid, last);
         return GCS_Values{
                 std::max(left.GreatestContigSum,
                          std::max(right.GreatestContigSum,
@@ -33,8 +35,7 @@ GCS_Values contig_worker(RAIter first, RAIter last, std::size_t size){
 
 template<typename RAIter>
 int contigSum(RAIter first, RAIter last){
-    std::size_t size = std::distance(first, last);
-    return (size < 1) ? 0 : std::max(contig_worker(first, last, size).GreatestContigSum, 0);
+    return contig_worker(first, last).GreatestContigSum;
 }
 
 #endif //CONTIGSUM_HPP
