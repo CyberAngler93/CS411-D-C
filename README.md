@@ -32,9 +32,13 @@ D. The sum of the entire sequence.
 This algorithm utilizes a data struct to hold the 4 values outlined above.
 Using divide and conquer and a combination logic for determining the max utilizing std::max.
 The combination logic is as follows:
+
 gcs = left.a or right.a or left.c+right.b
+
 gpsf = left.b or left.d + right.b
+
 rpsl = right.b or right.d + left.b
+
 sum = right.d + left.d
 
 ## Exercise B
