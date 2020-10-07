@@ -1,4 +1,4 @@
-# CS411-D-C
+# CS411-D-and-C
 
 This repository contains the solutions to CS411-HW3 consisting of exercise A contiguous sums and exercise B inverions counting from stable sorts.
 
