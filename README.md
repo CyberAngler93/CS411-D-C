@@ -14,13 +14,17 @@ Here is an idea for an efficient algorithm to find the GCS using
 the Divide-and-Conquer strategy. Given a sequence of
 numbers, our algorithm computes and returns the following
 four values.
+
 A. The GCS of the sequence.
+
 B. The greatest possible sum of a contiguous subsequence
 that includes the first value in the sequence, or zero if all
 such sums are negative.
+
 C. The greatest possible sum of a contiguous subsequence
 that includes the last value in the sequence, or zero if all
 such sums are negative.
+
 D. The sum of the entire sequence.
 
 ### About 
