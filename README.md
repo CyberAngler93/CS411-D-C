@@ -33,7 +33,7 @@ gpsf = left.b or left.d + right.b
 rpsl = right.b or right.d + left.b
 sum = right.d + left.d
 
-## Exervise B
+## Exercise B
 
 Find the number of inversions by adding during a stable sort
 
